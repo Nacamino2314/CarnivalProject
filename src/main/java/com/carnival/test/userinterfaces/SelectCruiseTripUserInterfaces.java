@@ -19,4 +19,8 @@ public class SelectCruiseTripUserInterfaces {
     public static final Target BTN_PRICING = Target.the(" pricing button").located(By.id("sfn-nav-pricing"));
     public static final Target LBL_PRICE = Target.the(" label of the price").locatedBy("(//span[@class='vrl-item__price-value ng-binding'])[1]");
 
+    public static final Target BTN_ITINERARY = Target.the("itinerary button").locatedBy("(//a[@class='vrl-item__learn-more'])[1]");
+    public static final Target BTN_ITINERARY_PAGE = Target.the("itinerary button of the page").locatedBy("//p[contains(text(),'{0}')]//ancestor::button[@class='about-cta']");
+    public static final Target BTN_BOOK_NOW = Target.the("book now button").located(By.id("sm-booking-btn"));
+
 }

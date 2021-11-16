@@ -1,8 +1,10 @@
 package com.carnival.test.stepdefinitions;
 
+import com.carnival.test.questions.TheOptionToBookNow;
 import com.carnival.test.questions.TheResults;
 import com.carnival.test.tasks.OpenURL;
 import com.carnival.test.tasks.SelectCruiseTrip;
+import com.carnival.test.tasks.SelectItinerary;
 import com.carnival.test.tasks.SelectPrice;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -27,14 +29,19 @@ public class SelectCruiseTripStepDefinitions {
         theActorCalled("The User").wasAbleTo(OpenURL.onPage(PAGE_URL));
     }
 
-    @When("^he selects the trip (.*) cruises and month (.*) and duration (.*)$")
-    public void HeSelectsTheTripCruisesAndDuration(String trip, String month, String duration) {
-        theActorInTheSpotlight().attemptsTo(SelectCruiseTrip.onThePage(trip, month, duration));
+    @When("^he selects the trip (.*) cruises and duration (.*)$")
+    public void HeSelectsTheTripCruisesAndDuration(String trip, String duration) {
+        theActorInTheSpotlight().attemptsTo(SelectCruiseTrip.onThePage(trip, duration));
     }
 
     @When("^he filters by price$")
     public void HeFiltersByPrice() {
         theActorInTheSpotlight().attemptsTo(SelectPrice.onThePage());
+    }
+
+    @When("^he selects the itinerary (.*)$")
+    public void HeSelectsTheItinerary(String itinerary ) {
+        theActorInTheSpotlight().attemptsTo(SelectItinerary.onThePage(itinerary));
     }
 
     @Then("^he should see the results$")
@@ -46,4 +53,10 @@ public class SelectCruiseTripStepDefinitions {
     public void HeShouldSeeThePricesOfTheTrip() {
         theActorInTheSpotlight().should(seeThat(TheResults.onThePage()));
     }
+
+    @Then("^he should see the option to book now$")
+    public void HeShouldSeeTheOptionToBookNow() {
+        theActorInTheSpotlight().should(seeThat(TheOptionToBookNow.onThePage()));
+    }
+
 }

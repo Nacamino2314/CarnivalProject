@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="As a user I want select cruise trip" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-14T18:55:42" hostname="DESKTOP-4DF54IU" time="93.723">
+<testsuite name="As a user I want select cruise trip" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-16T20:53:57" hostname="DESKTOP-4DF54IU" time="248.834">
   <properties/>
-  <testcase name="Search cruises on the page correctly" classname="As a user I want select cruise trip" time="93.723"/>
+  <testcase name="Search cruises on the page correctly" classname="As a user I want select cruise trip" time="149.865"/>
+  <testcase name="Search itinerary on the page correctly" classname="As a user I want select cruise trip" time="98.964"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[nov 14, 2021 1:55:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[nov 16, 2021 3:53:58 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 22183
+Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 29194
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov 14, 2021 1:55:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1637096050.443][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+nov 16, 2021 3:54:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -20,6 +22,21 @@ INFORMACIÓN: Detected dialect: W3C
         /_/                                                                
 
 TEST PASSED: Search cruises on the page correctly
+----------------------------------------------------------------------------
+nov 16, 2021 3:56:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[1637096191.732][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+nov 16, 2021 3:56:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Search itinerary on the page correctly
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
